@@ -1,0 +1,25 @@
+header footer {
+  height: 60px;
+}
+
+h1 {
+  font-size: 26px;
+  color: #0f0f0f;
+  text-transform: uppercase;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ff0000;
+}
+
+.article article{
+  background-color: #cecece;
+}
+
+.article article:not(:last-child) {
+  margin-bottom: 16px;
+}

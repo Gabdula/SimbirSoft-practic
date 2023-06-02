@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+  </head>
+  <body>
+    <main style="width: 50%">
+      <article>
+        <h1>&lt;section&gt; - элемент секции</h1>
+      </article>
+      <p>
+        HTML-элемент &lt;section&gt; представляет собой автономный раздел — который не может быть
+        представлен более точным по семантике элементом — внутри HTML-документа. Как правило, но не
+        всегда, разделы имеют заголовок.
+      </p>
+      <section>
+        <p>
+          Например, меню навигации должно быть помещено в элемент &lt;nav&gt;, но список результатов
+          поиска и отображение карты с её элементами управления не имеют специфических элементов и
+          могут быть помещены в &lt;section&gt;.
+        </p>
+      </section>
+      <section>
+        <table>
+          <thead>
+            <tr>
+              <th>Категории контента</th>
+              <th>
+                <a href="#">Основной поток</a>, <a href="#">секционный контент</a>,
+                <a href="#">явный контент</a>.
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Допустимое содержимое</td>
+              <td>
+                <a href="#">Основной поток</a>
+              </td>
+            </tr>
+            <tr>
+              <td>Пропуск тега</td>
+              <td>Ни одного; Оба тега, открывающий и закрывающий, являются обязательными.</td>
+            </tr>
+            <tr>
+              <td>Допустимые родители</td>
+              <td>
+                Любой элемент, который разрешает
+                <a href="#">контент основного потока</a>
+                в качестве содержимого. Обратите внимание, что элемент
+                <code>&lt;section&gt;</code> не должен быть потомком элемента
+                <a href="#"><code>&lt;address&gt;</code></a
+                >.
+              </td>
+            </tr>
+            <tr>
+              <td>Допустимые ARIA-роли</td>
+              <td>
+                <code>
+                  <a href="#" title="Currently only available in English (US)"
+                    >status <small>(en-US)<small></small></small>
+                  </a> </code
+                >,
+                <code>
+                  <a href="#" title="Currently only available in English (US)"
+                    >status <small>(en-US)<small></small></small>
+                  </a> </code
+                >,
+                <code>
+                  <a href="#" title="Currently only available in English (US)"
+                    >status <small>(en-US)<small></small></small>
+                  </a> </code
+                >,
+                <code>
+                  <a href="#" title="Currently only available in English (US)"
+                    >status <small>(en-US)<small></small></small>
+                  </a> </code
+                >,
+                <code>
+                  <a href="#" title="Currently only available in English (US)"
+                    >status <small>(en-US)<small></small></small>
+                  </a> </code
+                >,
+                <code>
+                  <a href="#" title="Currently only available in English (US)"
+                    >status <small>(en-US)<small></small></small>
+                  </a> </code
+                >,
+                <code>
+                  <a href="#" title="Currently only available in English (US)"
+                    >status <small>(en-US)<small></small></small>
+                  </a> </code
+                >,
+                <code>
+                  <a href="#" title="Currently only available in English (US)"
+                    >status <small>(en-US)<small></small></small>
+                  </a> </code
+                >,
+                <code>
+                  <a href="#" title="Currently only available in English (US)"
+                    >status <small>(en-US)<small></small></small>
+                  </a>
+                </code>
+              </td>
+            </tr>
+            <tr>
+              <td>DOM-интерфейс</td>
+              <td>
+                <a href="#"><code>HTMLElement</code></a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section aria-labelledby="примечание">
+        <h2>Примечание</h2>
+        <div>
+          <ol>
+            <li>
+              Каждый элемент <code>&lt;section&gt;</code> должен быть идентифицирован, обычно путём
+              добавления заголовка (элементы
+              <a title="Currently only available in English (US)" href="#">
+                <code>&lt;h1&gt;</code> <small>(en-US)</small>
+              </a>
+              -
+              <a title="Currently only available in English (US)" href="#">
+                <code>&lt;h6&gt;</code> <small>(en-US)</small> </a
+              >) в качестве дочернего элемента.
+            </li>
+            <li>
+              Если имеет смысл по-особому объединить содержимое элемента
+              <code>&lt;section&gt;</code> (например, сделать цельным и независимым разделом
+              HTML-документа), используйте вместо него элемент
+              <a href="#"><code>&lt;article&gt;</code></a
+              >.
+            </li>
+            <li>
+              Не используйте элемент <code>&lt;section&gt;</code> как общий контейнер; для этого
+              есть <a href="#"><code>&lt;div&gt;</code></a
+              >, особенно когда секционирование применяется только для стилизации. На практике
+              раздел должен логически выделяться в структуре документа.
+            </li>
+          </ol>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
